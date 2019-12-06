@@ -56,7 +56,7 @@ const addRegime = (inputArray) => {
         throw err;
     }
     });
-   var sql = "INSERT INTO regime (name, price, description, category, tags, goals) VALUES ('"+inputArray[0]+"','"+inputArray[5]+"', '"+inputArray[2]+"', '"+inputArray[1]+"', '"+inputArray[4]+"', '"+inputArray[3]+"')";
+   var sql = "INSERT INTO regime (name, price, description, category, tags, goals) VALUES ('"+inputArray[0]+"','"+inputArray[1]+"', '"+inputArray[2]+"', '"+inputArray[3]+"', '"+inputArray[4]+"', '"+inputArray[5]+"')";
     db.query(sql, function (err, res) {
     if (err) throw err;
     // db.end();

@@ -327,7 +327,8 @@ app.post('/fetchSingleRegime', async (req,res) => {
 
 // Regime Creation INSERT
 app.post('/regimeCreation',function(req,res){
-
+    console.log(req)
+    console.log(req.body)
     var data = [req.body.name, req.body.price, req.body.description, req.body.category, req.body.tags, req.body.goals]
 
   userConnector.addRegime(data);
